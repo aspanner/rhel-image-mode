@@ -1,3 +1,6 @@
+#use base image
+FROM registry.redhat.io/rhel9/rhel-bootc:9.4
+
 #install the lamp components
 RUN dnf module enable -y php:8.2 nginx:1.22 && dnf install -y httpd mariadb mariadb-server php-fpm php-mysqlnd && dnf clean all
         
