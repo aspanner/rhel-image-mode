@@ -1,3 +1,6 @@
+#1 Build your RHEL image for image mode:
+`podman build -f Containerfile -t quay.io/aspanner/lamp-bootc:latest`
+
 Run an image:
 
 ```
