@@ -1,0 +1,5 @@
+[[blueprint.customizations.user]]
+name = "redhati"
+password = "redhati"
+groups = ["wheel"]
+
