@@ -21,12 +21,7 @@ PublishPort=1883:1883
 
 [Install]
 # Start by default on boot
-WantedBy=multi-user.target default.target
-'
-[Unit]
-Description=Mosquitto Quadlet Container
-#After=local-fs.target
-' >> /etc/containers/systemd
+WantedBy=multi-user.target default.target' >> /etc/containers/systemd
 
 #reload the daemon
 RUN 'systemctl daemon-reload'
