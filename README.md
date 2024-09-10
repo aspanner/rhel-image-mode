@@ -1,7 +1,10 @@
 #1 Build your RHEL image for image mode:
-`podman build -f Containerfile -t quay.io/aspanner/lamp-bootc:latest`
+` sudo podman build --creds username:password  -f Containerfile -t quay.io/youruser/yourcontainerimage:yourtag`
 
-Run an image:
+then get your image id with `sudo podman images` and then push your freshly build image to quay.io via `sudo podman push <imageID> quay.io/youruser/yourcontainerimage:yourtag`
+
+
+Now you are ready to run the bootc image builder and reference aforementioned image:
 
 ```
 sudo podman run \
@@ -16,5 +19,5 @@ sudo podman run \
     registry.redhat.io/rhel9/bootc-image-builder:latest \
     --type iso \
     --config config.toml \
-  quay.io/<namespace>/<image>:<tag>
+  quay.io/<youruser>/<yourcontainerimage>:<yourtag>
 ```
