@@ -1,5 +1,5 @@
-[[blueprint.customizations.user]]
-name = "redhati"
-password = "redhati"
+[[customizations.user]]
+name = "image"
+password = "image"
+key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCtw6fhS6lCzvxeY9zBlR5oVO3Ro0dNHjmPtmzt/ysmjZ/Ovw7oPmJVL2itTkG455baMw1s9AMksNliPqCuSLNpCny2VwDb3r0PJY0CdW1DKTtkj7UYiqVYDwP7ujIJMaZFd4SLXB3YK+4EFoqchB1A0ys3L4G8vlHw1Fj6un5evaaZflA0rjutJ1/5vu9fzLE65YFoMqlmDNogFYGNizsuK3SmA++pIQsDG7NtN8frn5V6LVNpfgJWwN8NNFyLyhtsANZT1ZAjsGgHpQN0hm8jukyUmnrKssralYdFTxDyO07YjwGPZeyI"
 groups = ["wheel"]
-
